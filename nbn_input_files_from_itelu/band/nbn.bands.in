@@ -1,0 +1,5 @@
+&BANDS
+  prefix = 'nbn',
+  outdir = './tmp',
+  lsym   = .false.
+/
