@@ -1,0 +1,6 @@
+--
+&input
+  fildyn   = 'Extr.dynsm0.300000q',
+  flfrc    = 'flfrc.d',
+  zasr = 'simple'
+ /

@@ -1,0 +1,9 @@
+! parameter of the SCF DFPT calculation useful for EPIq
+&diff_start_param
+   efermi=19.9645,
+   nel_r=    18.00000,
+   ngauss_ph=1, sigma_ph=0.180,
+/
+KPOINTS
+automatic
+12 12 12 0 0 0
