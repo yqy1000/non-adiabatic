@@ -1,6 +1,0 @@
---
-&input
-  fildyn   = 'nbn.dyn.xml',
-  flfrc    = 'nbn.frc',
-  zasr = 'crystal'
- /

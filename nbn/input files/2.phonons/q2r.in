@@ -1,6 +1,0 @@
---
-&input
-  fildyn   = 'dynq',
-  flfrc    = 'nbn.frc',
-  zasr = 'no'
- /
