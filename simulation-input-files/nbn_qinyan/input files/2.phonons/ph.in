@@ -1,0 +1,20 @@
+--
+&inputph
+  amass(1)= 14.00670,
+  amass(2)= 92.90638,
+  prefix   = 'nbn',
+  outdir = './tmp'
+  fildyn   = 'dynq',
+  fildvscf = 'dvscf_',
+  tr2_ph   =  1.0d-16
+  ldisp    = .true.,
+  recover = .true.
+  nq1 = 8,
+  nq2 = 8,
+  nq3 = 8,
+  nk1 = 12,
+  nk2 = 12,
+  nk3 = 12,
+  dvscf_star%open=.true.,
+  dvscf_star%basis= "cartesian",
+ /
