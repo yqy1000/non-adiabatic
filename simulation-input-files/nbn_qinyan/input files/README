@@ -1,0 +1,12 @@
+all "input_dump" files in 4.epiq_* are the same
+"input_wup" and "q2r.in" in 4.epiq_phonon_* are the same
+
+workflow for ME calculation using non-adiabatic phonon:
+1.calculate the non-adiabatic phonon dynamical matrices for the phonon-grid with input files in 4.epiq_phonon_grid
+2.copy the dynamical matrices file to 4.epiq_ME_iso and rename it as matdyn.dyn
+3.modify matdyn.dyn to the correct format by using the following command in vim:
+:g/Diag.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\n.*\d25
+:%s/      D/     D/g
+:%s/      q/     q/g
+4.do the phonon linewidth calculation with input_lw_non
+5.the following calculations (input_a2F and input_ME_iso) are the same as adiabatic case

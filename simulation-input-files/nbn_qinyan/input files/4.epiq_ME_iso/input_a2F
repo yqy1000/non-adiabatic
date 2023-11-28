@@ -1,0 +1,11 @@
+&input_a2F
+prefix='nbn'
+omega_min=0
+lkp_sequential=.true.
+omega_max=100
+nsigma=1
+nom=1000
+chosen_sigma=0.18
+&end
+AUTOMATIC
+16 16 16 0 0 0

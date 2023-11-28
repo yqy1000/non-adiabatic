@@ -9,7 +9,7 @@ exclude_bands = 1:5
 num_wann =   8
 iprint =   2
 dis_froz_max =    24.000000000000
-num_iter =     500
+num_iter =     550
 write_bvec = .true.
 write_hr = .true.
 
@@ -20,9 +20,9 @@ End Atoms_Frac
 
 Begin Unit_Cell_Cart
 Bohr
--4.181 0 4.181
-0 4.181 4.181
--4.181 4.181 0
+-4.1787 0 4.1787
+0 4.1787 4.1787
+-4.1787 4.1787 0
 End Unit_Cell_Cart
 
 bands_plot = .true.

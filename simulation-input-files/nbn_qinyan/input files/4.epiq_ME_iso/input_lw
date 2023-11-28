@@ -1,0 +1,30 @@
+ &control
+    dump_gR=.false.,
+    read_dumped_gr=.true.,
+    prefix='nbn',
+    calculation='ph_linewidth',
+    &end
+ &electrons
+    theta=10.0,
+    ngauss=0,
+    sigma_min=0.18,
+    sigma_max=0.18,
+    nsigma=1,
+    ef_from_input=.false.,
+    efermi=20.1382,
+    thr_compute_k=0.5,
+    &end
+ &phonons
+    read_modes=.false.,
+    Fourier_interp_dyn=.true.,
+    acoustic_sum_rule=.false.,
+    nq1=8,
+    nq2=8,
+    nq3=8,
+    &end
+k-points
+automatic
+24 24 24  0  0  0
+q-points
+automatic
+16 16 16 0 0 0

@@ -1,27 +1,27 @@
  &control
   calculation = 'scf',
   prefix       = 'nbn',
-  pseudo_dir   = '../../pseudo',
+  pseudo_dir   = '../../nbn/pseudo-new',
   outdir       = './tmp',
   tprnfor = .true.,
   tstress = .true.  
  /
  &system    
   ibrav        = 2,
-  celldm(1)    = 8.3620
+  celldm(1)    = 8.3574
   nat          = 2,
   ntyp         = 2,
   ecutwfc      = 80,
   smearing     = 'mv'
   occupations  = 'smearing'
-  degauss      = 0.180
+  degauss      = 0.18
  /
  &electrons
   diagonalization = 'david'
   mixing_mode     = 'plain'
   mixing_beta     = 0.7
   conv_thr        = 1.0d-12
-!  tqedft = .true.
+  tqedft = .true.
  /
  &ions
 !  ion_dynamics = 'damp'
@@ -31,15 +31,15 @@
 !  press_conv_thr = 0.001
 / 
 ATOMIC_SPECIES
-N  14.00670 N-pseudodojo-ncsr-pbesol.upf
-Nb 92.90638 Nb-pseudodojo-ncsr-pbesol.upf
+N  14.00670 N.oncvpsp.upf
+Nb 92.90638 Nb.oncvpsp-pbe.upf
 ATOMIC_POSITIONS crystal
 N       0.000000000   0.000000000   0.000000000
 Nb      0.500000000   0.500000000   0.500000000
 K_POINTS AUTOMATIC
  12 12 12 0 0 0
-!PHOTONS EV
-!3
-!  6e-2   1e-1   1   0   0
-!  6e-2   1e-1   0   1   0
-!  6e-2   1e-1   0   0   1
+PHOTONS EV
+3
+  1   1e-2   1   0   0
+  1   1e-2   0   1   0
+  1   1e-2   0   0   1

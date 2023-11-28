@@ -19,6 +19,6 @@ Ph
     nq3=8,
     elph_nbnd_min=6,
     elph_nbnd_max=13,
-    start_q=424,
+    start_q=1,
     last_q=512,
  &end
