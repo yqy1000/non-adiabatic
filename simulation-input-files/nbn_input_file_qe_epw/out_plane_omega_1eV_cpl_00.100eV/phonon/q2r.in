@@ -1,0 +1,12 @@
+--
+&input
+  fildyn   = 'nbn.dyn.xml',
+
+  !flfrc    = 'nbn.frc.nozasr',
+  
+  flfrc    = 'nbn.frc',
+  zasr = 'simple'
+
+  !flfrc = 'nbn.frc.zasr.crystal'
+  !zasr = 'crystal'
+ /

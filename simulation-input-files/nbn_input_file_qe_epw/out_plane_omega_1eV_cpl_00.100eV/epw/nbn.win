@@ -1,0 +1,11 @@
+begin projections
+ N:l=1
+ Nb:l=2
+end projections
+ exclude_bands = 1:5                                                                                                                                                                                                                                             
+num_wann =   8
+iprint =   2
+dis_froz_max =    24.000000000000
+num_iter =     500
+write_bvec = .true.
+ write_hr = .true.

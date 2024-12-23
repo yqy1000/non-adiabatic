@@ -1,0 +1,81 @@
+--
+&inputepw
+  prefix      = 'nbn',
+  amass(1)    = 14.00670,
+  amass(2)    = 92.90638,
+  outdir      = './tmp',
+  dvscf_dir   = '../phonon/save'
+
+  lifc = .true.
+  fixsym = .true.  
+
+  max_memlt = 4.0 
+
+  ep_coupling = .true.
+  elph        = .true.
+  !ep_coupling = .false.
+  !elph        = .false.
+
+  epwwrite    = .true.
+  epwread     = .false.
+  !epwwrite    = .false.
+  !epwread     = .true.
+
+  etf_mem     =  1 
+
+  wannierize  = .true.
+  !wannierize  = .false.
+  nbndsub     =  8
+  bands_skipped = 'exclude_bands = 1:5'
+
+  num_iter    = 500
+  dis_froz_max = 24
+  proj(1)     = 'N:l=1'
+  proj(2)     = 'Nb:l=2'
+  wannier_plot= .true.
+
+  band_plot   = .true.
+  filkf       = "nbn_band.kpt"
+  filqf       = "nbn_band.kpt"
+
+  iverbosity  = 2
+
+  fsthick     = 0.4   ! eV
+  degaussw    = 0.1  ! eV
+  degaussq    = 0.05 ! eV
+
+  fermi_plot  = .true.
+  !ephwrite    = .true. 
+  !ephwrite    = .false.
+  !eliashberg  = .true.
+  eliashberg  = .false.
+
+  laniso      = .true.
+  limag       = .true.
+  lpade       = .true.
+
+  nsiter      = 1000
+  conv_thr_iaxis = 1.0d-4
+  wscut       = 1.0  ! eV
+  muc         = 0.16
+
+  nstemp      = 3
+  temps       = 10  20
+
+  nk1         = 8
+  nk2         = 8
+  nk3         = 8
+
+  nq1         = 8
+  nq2         = 8
+  nq3         = 8
+
+  !mp_mesh_k   = .true.
+  !nkf1        = 60
+  !nkf2        = 60
+  !nkf3        = 60
+
+  !nqf1        = 30
+  !nqf2        = 30
+  !nqf3        = 30
+ /

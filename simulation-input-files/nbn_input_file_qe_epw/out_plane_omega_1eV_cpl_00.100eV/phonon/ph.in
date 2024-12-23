@@ -1,0 +1,15 @@
+--
+&inputph
+  prefix   = 'nbn',
+  fildyn   = 'nbn.dyn.xml',
+  fildvscf = 'dvscf',
+  tr2_ph   =  1.0d-16
+  ldisp    = .true.,
+  recover = .true.
+  nq1 = 8,
+  nq2 = 8,
+  nq3 = 8,
+  nk1 = 16,
+  nk2 = 16,
+  nk3 = 16,
+ /
